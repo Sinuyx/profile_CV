@@ -58,4 +58,31 @@ document.getElementById("linkedinLink").addEventListener("click", e => {
     alert(currentLang === "en" ? "Replace this placeholder with your LinkedIn profile URL before publishing." : "Hãy thay đường dẫn mẫu này bằng URL LinkedIn của bạn trước khi đăng.");
   }
 });
+
+const themeToggle = document.getElementById("themeToggle");
+let currentTheme = localStorage.getItem("portfolio_theme") || "light";
+
+function applyTheme(theme) {
+  currentTheme = theme;
+  document.documentElement.setAttribute("data-theme", theme);
+  localStorage.setItem("portfolio_theme", theme);
+  if (themeToggle) {
+    themeToggle.textContent = theme === "light" ? "🌙" : "☀️";
+    themeToggle.setAttribute("aria-label", theme === "light" ? "Chuyển sang theme tối" : "Chuyển sang theme sáng");
+    themeToggle.setAttribute("title", theme === "light" ? "Chuyển sang theme tối" : "Chuyển sang theme sáng");
+  }
+  const metaTheme = document.querySelector('meta[name="theme-color"]');
+  if (metaTheme) {
+    metaTheme.setAttribute("content", theme === "light" ? "#f4f7fb" : "#07111f");
+  }
+}
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    applyTheme(currentTheme === "light" ? "dark" : "light");
+  });
+}
+
+applyTheme(currentTheme);
 setLanguage("en");
+
