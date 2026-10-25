@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Cybersecurity portfolio of an Information Security student at FPT University, Can Tho.">
+  <title>Portfolio | Information Security</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Portfolio home"><span class="brand-mark">{"</span><span>Duc Quy<span class="accent">.SEC</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav" class="main-nav">
+      <a href="#home" data-i18n="navHome">Home</a>
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#skills" data-i18n="navSkills">Skills</a>
+      <a href="#projects" data-i18n="navProjects">Projects</a>
+      <a href="#education" data-i18n="navEducation">Education</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">VI</button>
+      <a class="button button-small button-outline" href="assets/CV.pdf" download data-i18n="downloadCV">Download CV ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span><span data-i18n="heroStatus">OPEN TO SOC INTERN OPPORTUNITIES</span></div>
+        <p class="hero-kicker" data-i18n="heroKicker">INFORMATION SECURITY · FPT UNIVERSITY</p>
+        <h1><span data-i18n="heroHello">Hello, I'm</span><br><span class="gradient-text">Duc Quy</span><span class="accent">.</span></h1>
+        <h2 data-i18n="heroRole">Information Security Student <span class="role-line">/ SOC Intern Candidate</span></h2>
+        <p class="hero-description" data-i18n="heroDescription">Building my foundation in networking, Python, SQL, and cybersecurity through coursework and team projects. Curious about threat intelligence, network traffic, and security monitoring.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#projects" data-i18n="exploreProjects">Explore Projects <span>↘</span></a>
+          <a class="button button-outline" href="#contact" data-i18n="contactMe">Contact Me</a>
+        </div>
+        <div class="hero-meta">
+          <span><span class="meta-icon">⌁</span> Can Tho, Vietnam</span>
+          <span><span class="meta-icon">⌘</span> FPT University</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Decorative cybersecurity terminal">
+        <div class="visual-glow"></div>
+        <div class="terminal-card">
+          <div class="terminal-top"><div class="traffic"><i></i><i></i><i></i></div><span>security@portfolio:~</span><span class="terminal-lock">▣</span></div>
+          <div class="terminal-body">
+            <p><span class="terminal-muted">visitor@web</span>:<span class="terminal-blue">~</span>$ whoami</p>
+            <p class="terminal-output">information_security_student</p>
+            <p><span class="terminal-muted">visitor@web</span>:<span class="terminal-blue">~</span>$ focus --current</p>
+            <div class="terminal-tags"><span>NETWORKING</span><span>PYTHON</span><span>CTI</span></div>
+            <p><span class="terminal-muted">visitor@web</span>:<span class="terminal-blue">~</span>$ <span class="cursor">▋</span></p>
+          </div>
+          <div class="terminal-footer"><span><i class="status-dot"></i> SYSTEM ONLINE</span><span>BUILD 2026.10</span></div>
+        </div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-chip chip-one">MITRE ATT&CK</div><div class="floating-chip chip-two">PY / SQL</div>
+        <div class="hero-grid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section-wrap section-block">
+      <div class="section-heading"><div><p class="section-index">01 / <span data-i18n="aboutLabel">PROFILE</span></p><h2 data-i18n="aboutTitle">About Me</h2></div><p data-i18n="aboutLead">A learner's mindset. A defender's curiosity.</p></div>
+      <div class="about-grid">
+        <div class="about-card card-surface"><div class="card-symbol">⌬</div><h3 data-i18n="aboutCardTitle">Curious by design.</h3><p data-i18n="aboutText">I'm a third-year Information Security student at FPT University, Can Tho campus. I have a foundation in computer networking, SQL databases, and Python. Through coursework and lab environments, I have practiced system configuration and network traffic analysis. I'm looking for an SOC internship where I can learn from security teams and strengthen my hands-on skills.</p></div>
+        <div class="about-facts">
+          <div class="fact-row"><span class="fact-label" data-i18n="factFocus">CURRENT FOCUS</span><span data-i18n="factFocusValue">Security monitoring · CTI</span></div>
+          <div class="fact-row"><span class="fact-label" data-i18n="factStudy">STUDYING</span><span data-i18n="factStudyValue">Information Security</span></div>
+          <div class="fact-row"><span class="fact-label" data-i18n="factLocation">LOCATION</span><span>Can Tho, Vietnam</span></div>
+          <div class="fact-row"><span class="fact-label" data-i18n="factEmail">EMAIL</span><a href="https://mail.google.com/mail/u/0/?tab=wm#inbox?compose=new" class="placeholder" target="_blank" rel="noreferrer">quyndce201271@gmail.com</a></div>
+          <div class="fact-row"><span class="fact-label">GITHUB</span><a href="https://github.com/Sinuyx" target="_blank" rel="noreferrer">github.com/Sinuyx ↗</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-wrap section-block">
+      <div class="section-heading"><div><p class="section-index">02 / <span data-i18n="skillsLabel">TOOLKIT</span></p><h2 data-i18n="skillsTitle">Skills & Knowledge</h2></div><p data-i18n="skillsLead">A growing toolkit built through projects and practice.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="skill-icon">⌘</div><h3>Python</h3><p data-i18n="skillPython">Application logic, data processing, and scripting fundamentals.</p><div class="skill-bar"><span style="width:65%"></span></div><small data-i18n="skillLearning">Learning through projects</small></article>
+        <article class="skill-card"><div class="skill-icon">◈</div><h3>CTI & MITRE ATT&CK</h3><p data-i18n="skillCTI">Familiarity with classifying cyber threat intelligence into ATT&CK techniques through a team project.</p><div class="skill-bar"><span style="width:55%"></span></div><small data-i18n="skillLearning">Learning through projects</small></article>
+        <article class="skill-card"><div class="skill-icon">⌗</div><h3>Machine Learning / NLP</h3><p data-i18n="skillML">Text preprocessing, feature extraction, and model evaluation concepts.</p><div class="skill-bar"><span style="width:52%"></span></div><small data-i18n="skillLearning">Learning through projects</small></article>
+        <article class="skill-card"><div class="skill-icon">▤</div><h3>SQL & Data</h3><p data-i18n="skillSQL">SQL fundamentals and data handling concepts.</p><div class="skill-bar"><span style="width:58%"></span></div><small data-i18n="skillLearning">Learning through projects</small></article>
+        <article class="skill-card"><div class="skill-icon">⌁</div><h3 data-i18n="skillAlgoTitle">Algorithms</h3><p data-i18n="skillAlgo">Dynamic programming and Levenshtein Distance for string comparison.</p><div class="skill-bar"><span style="width:60%"></span></div><small data-i18n="skillLearning">Learning through projects</small></article>
+        <article class="skill-card"><div class="skill-icon">⎔</div><h3 data-i18n="skillCollabTitle">Teamwork & Self-learning</h3><p data-i18n="skillCollab">Collaborating on coursework, researching technical topics, and iterating on solutions.</p><div class="skill-bar"><span style="width:70%"></span></div><small data-i18n="skillLearning">Learning through projects</small></article>
+      </div>
+      <p class="skills-note" data-i18n="skillsNote">Skill indicators are illustrative, not formal proficiency ratings. Add or remove items to reflect your actual experience.</p>
+    </section>
+
+    <section id="projects" class="section-wrap section-block">
+      <div class="section-heading"><div><p class="section-index">03 / <span data-i18n="projectsLabel">SELECTED WORK</span></p><h2 data-i18n="projectsTitle">Projects</h2></div><p data-i18n="projectsLead">Coursework and team projects — with a focus on learning by building.</p></div>
+      <div class="projects-grid">
+        <article class="project-card project-featured">
+          <div class="project-top"><span class="project-number">PROJECT_01</span><span class="project-type" data-i18n="teamProject">TEAM PROJECT</span></div>
+          <div class="project-art art-cti"><div class="art-node node-a">CTI</div><div class="art-node node-b">IOC</div><div class="art-node node-c">TTP</div><div class="art-lines"></div><span class="art-label">THREAT INTELLIGENCE MAPPING</span></div>
+          <div class="project-content"><h3>AI Classification and Mapping CTI into MITRE ATT&CK Techniques</h3><p data-i18n="project1Desc">A team project exploring AI/ML and NLP approaches to classify cyber threat intelligence text and map it to MITRE ATT&CK techniques. The repository covers text preprocessing, model experiments, and evaluation metrics.</p><div class="tag-list"><span>Python</span><span>Machine Learning</span><span>NLP</span><span>MITRE ATT&CK</span></div><a class="project-link" href="https://github.com/Sinuyx/AI-Classification-And-Mapping-CTI-into-MITRE-ATT-CK-Techniques" target="_blank" rel="noreferrer"><span data-i18n="viewGithub">View on GitHub</span> ↗</a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-top"><span class="project-number">PROJECT_02</span><span class="project-type" data-i18n="teamProject">TEAM PROJECT</span></div>
+          <div class="project-art art-clean"><div class="disk-ring"><span>DISK<br>SCAN</span></div><div class="file-chip file-a">.log</div><div class="file-chip file-b">.tmp</div><div class="file-chip file-c">.cache</div><span class="art-label">AI-ASSISTED STORAGE</span></div>
+          <div class="project-content"><h3>AI-Driven Linux Disk Cleanup Assistant</h3><p data-i18n="project2Desc">A Python-based assistant concept for analyzing file metadata and suggesting whether files should be kept, deleted, or compressed, with attention to safer paths and recovery considerations.</p><div class="tag-list"><span>Python</span><span>ML / NLP</span><span>Sentence Transformers</span><span>Tkinter</span></div><a class="project-link" href="https://github.com/Sinuyx/AI-Driven-Linux-Disk-Cleanup-Assistant" target="_blank" rel="noreferrer"><span data-i18n="viewGithub">View on GitHub</span> ↗</a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-top"><span class="project-number">PROJECT_03</span><span class="project-type" data-i18n="courseProject">COURSE PROJECT</span></div>
+          <div class="project-art art-english"><div class="word-box">LEARN<span class="accent">_EN</span></div><div class="compare-line"><span>SECURITY</span><b>↔</b><span>SECURlTY</span></div><span class="art-label">TEXT SIMILARITY</span></div>
+          <div class="project-content"><h3>AI pronunciation trainer</h3><p data-i18n="project3Desc">An AI pronunciation trainer with text comparison functionality. My described contribution focuses on Levenshtein Distance and dynamic programming to score similarity and identify differences between a sample sentence and user input.</p><div class="tag-list"><span>Python</span><span>Algorithms</span><span>Dynamic Programming</span></div><a class="project-link" href="https://github.com/Sinuyx/ai-pronunciation-trainer" target="_blank" rel="noreferrer"><span data-i18n="viewGithub">View on GitHub</span> ↗</a></div>
+        </article>
+      </div>
+      <p class="project-disclaimer" data-i18n="projectDisclaimer"></p>
+    </section>
+
+    <section id="education" class="section-wrap section-block">
+      <div class="section-heading"><div><p class="section-index">04 / <span data-i18n="educationLabel">LEARNING PATH</span></p><h2 data-i18n="educationTitle">Education</h2></div><p data-i18n="educationLead">Building a foundation for a career in cyber defense.</p></div>
+      <div class="timeline">
+        <div class="timeline-marker"><span></span></div>
+        <div class="timeline-content"><div class="timeline-date" data-i18n="current">CURRENT</div><h3>FPT University — Can Tho Campus</h3><p class="timeline-degree" data-i18n="degree">Third-year student · Information Security</p><p data-i18n="educationText">Relevant learning areas include computer networking, Python programming, SQL databases, and cybersecurity projects.</p><div class="tag-list"><span>Networking</span><span>Python</span><span>SQL</span><span>Cybersecurity</span></div></div>
+      </div>
+      <p class="education-note"><span data-i18n="expectedGrad">Expected graduation:</span> <span class="placeholder">2028</span></p>
+    </section>
+
+    <section id="contact" class="section-wrap section-block contact-section">
+      <div class="contact-panel">
+        <div><p class="section-index">05 / <span data-i18n="contactLabel">GET IN TOUCH</span></p><h2 data-i18n="contactTitle">Let's connect.</h2><p data-i18n="contactLead"></p></div>
+        <div class="contact-links">
+          <a href="mailto:[EMAIL_ADDRESS]" class="contact-link"><span class="contact-icon">@</span><span><small>EMAIL</small><strong class="placeholder">quyndce201271@gmail.com</strong></span><b>↗</b></a>  
+          <a href="https://github.com/Sinuyx" target="_blank" rel="noreferrer" class="contact-link"><span class="contact-icon">⌘</span><span><small>GITHUB</small><strong>github.com/Sinuyx</strong></span><b>↗</b></a>
+          <a href="#" class="contact-link placeholder-link" id="linkedinLink"><span class="contact-icon">in</span><span><small>LINKEDIN</small><strong class="placeholder">www.linkedin.com/in/quy-nguyễn-đức-419878446</strong></span><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">{"</span><span>Duc Quy<span class="accent">.SEC</span></span></a><p data-i18n="footerText">Designed & built with curiosity. No security claims — just a learning journey.</p><span>© <span id="year"></span> · <span data-i18n="footerRights">All rights reserved.</span></span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
